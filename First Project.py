@@ -12,16 +12,16 @@ pelo computador entre o intervalo (0 a 50).
 para ele.
 """" 
 
-X = random.randint(0, 50)
+x = random.randint(0, 50)
 tentativas = 0
 
 while tentativas < 10:
-    A= int(input('Vamos lá! Digite um valor: '))
-    if A > X:
+    a = int(input('Vamos lá! Digite um valor: '))
+    if a > x:
       print('-> É um número menor! ')
-    if A < X:
+    if a < x:
       print('-> um número maior! ')
-    if A == X:
+    if a == x:
       print('Número correto!')
       break
     tentativas+=1
