@@ -11,7 +11,7 @@ pelo computador entre o intervalo (0 a 50).
 - Informe ao jogador o no de tentativas feitas e quantas tentativas ainda restam
 para ele.
  
-Primeira versão:
+-----------------------------------------------------------------------------------
 
 import random
 
@@ -30,9 +30,9 @@ while tentativas < 10:
     tentativas+=1
     print('Tentativas Realizadas: ',(tentativas))
     print('Tentativas Faltantes: ', (10 - tentativas))
-"""
 
-"""
+-------------------------------------------------------------------------------------
+
 DATA: 16/04/2021
 Reforado o primeiro projeto realizado com diminuição de 6 linhas de código.
 """
