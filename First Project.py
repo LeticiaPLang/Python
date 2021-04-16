@@ -10,7 +10,10 @@ número;
 pelo computador entre o intervalo (0 a 50).
 - Informe ao jogador o no de tentativas feitas e quantas tentativas ainda restam
 para ele.
-"""" 
+ 
+Primeira versão:
+
+import random
 
 x = random.randint(0, 50)
 tentativas = 0
@@ -27,4 +30,21 @@ while tentativas < 10:
     tentativas+=1
     print('Tentativas Realizadas: ',(tentativas))
     print('Tentativas Faltantes: ', (10 - tentativas))
-break
+"""
+
+"""
+DATA: 16/04/2021
+Reforado o primeiro projeto realizado com diminuição de 6 linhas de código.
+"""
+
+import random
+
+x = random.randint(0, 50)
+tentativas = 0
+
+while tentativas < 10:
+    a= int(input('Vamos lá! Digite um valor: '))
+    print('-> É um número menor!' if a > x else '-> É um número maior!' if a < x else '-> Número correto!')
+    if a == x:break
+    tentativas+=1
+    print(f'Tentativas realizadas: {tentativas} \nTentativas faltantes: {10 - tentativas}')
