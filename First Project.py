@@ -48,3 +48,4 @@ while tentativas < 10:
     if a == x:break
     tentativas+=1
     print(f'Tentativas realizadas: {tentativas} \nTentativas faltantes: {10 - tentativas}')
+
